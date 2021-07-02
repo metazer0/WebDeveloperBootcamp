@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+<body>
+
+    <h1>Forms Demo</h1>
+
+
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter a username</label>
+            <input type="text" placeholder="username" id="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a password</label>
+            <input type="password" placeholder="password" id="password" name="password">
+        </p>
+        <p>
+            <label for="color">Enter a color</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <p>
+            <label for="number">Enter a number</label>
+            <input type="number" id="number" name="number">
+        </p>
+        <button>Submit</button>
+        <input type="submit">
+    </form>
+
+    <hr>
+    <form action="https://www.reddit.com/search/?q=megaten">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+
+    <h2>More Inputs</h2>
+
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">I Agree</label>
+        <p>
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="" value="xs">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="" value="s">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="" value="m">
+        </p>
+
+        <p>
+            <label for="meal">Select a Meal</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="meat">Steak</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="cheese">Amount of Cheese</label>
+            <input type="range" id="cheese" name="cheese_level">
+        </p>
+
+        <p>
+            <label for="requests">Any Special Requests?</label>
+            <br>
+            <textarea name="requests" id="requests" cols="10" rows="4"></textarea>
+        </p>
+
+        <button>Submit</button>
+
+        <h2>Validation Demo</h2>
+
+        <form action="/dummy">
+            <label for="first">Enter First Name</label>
+            <input type="text" name="first" id="first" required>
+            <p>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <input type="email" required>
+            </p>
+            <button>Submit</button>
+        </form>
+    </form>
+</body>
+</html>
